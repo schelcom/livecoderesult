@@ -1,0 +1,16 @@
+<style type="css">
+div.tarea {
+  border: 1px inset #ccc;
+  background-color: white;
+  font: small courier, monospace black;
+}
+</style>
+
+<div class="tarea">
+  <% for ar_code_and_result in @ar_data %>
+    <span title="<%= ar_code_and_result.first %>">
+      <%= ar_code_and_result.last %>
+    </span>
+    <br/>
+  <% end %>
+</div>

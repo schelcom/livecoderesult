@@ -1,0 +1,13 @@
+<div id="bar_dev" style="position:fixed;bottom:0px;left:0px;width:100%;background:#00cc66;padding:2px 20px; z-index:9999:">
+  <table>
+    <tr>
+      <td id="dev_code_result" valign="top"></td>
+      <td valign="top">
+        <%= text_area_tag "code", "", {id: "dev_code", placeholder: "ruby code to evaluate"} %>
+      </td>
+    </tr>
+  </table>
+  <%= link_to "14.days", "javascript:void(0)", :id => "btn_14days" %>
+</div>
+<!-- %= javascript_include_tag "/livecoderesult/autosize.min.js" %>
+<%= javascript_include_tag "/livecoderesult/development.js" % -->
